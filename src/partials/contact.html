@@ -1,0 +1,7 @@
+<header>
+  <h1>{{{r.name}}}</h1>
+  {{#if r.location.city}}<h4><span class="fa fa-fw fa-map-marker"></span>&nbsp;{{r.location.city}}{{#if r.location.region}}, {{r.location.region}}{{/if}}{{#if r.location.country}}, {{r.location.country}}{{/if}}</h4>{{/if}}
+  {{#if r.contact.email}}<h4><span class="fa fa-fw fa-envelope"></span>&nbsp;<a href="mailto:{{r.contact.email}}">{{r.contact.email}}</a></h4>{{/if}}
+  {{#if r.contact.phone}}<h4><span class="fa fa-fw fa-phone"></span>&nbsp;{{r.contact.phone}}</h4>{{/if}}
+  {{#if r.contact.website}}<h4><span class="fa fa-fw fa-link"></span>&nbsp;<a href="{{RAW.contact.website}}">{{RAW.contact.website}}</a></h4>{{/if}}
+</header>

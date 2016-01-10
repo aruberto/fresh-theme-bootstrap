@@ -1,0 +1,20 @@
+{{#section 'skills'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-code"></span>&nbsp;{{{sectionTitle "Skills"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.skills.sets}}
+      <h4 class="row">
+        <div class="col-md-3"><strong>{{name}}</strong></div>
+        <div class="col-md-9">
+          {{#if skills}}
+            {{#each skills}}
+              <span class="label label-primary">{{this}}</span>
+            {{/each}}
+          {{/if}}
+        </div>
+      </h4>
+    {{/each}}
+  </div>
+</section>
+{{/section}}

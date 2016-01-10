@@ -1,0 +1,25 @@
+{{#section 'service'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-child"></span>&nbsp;{{{sectionTitle "Service"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.service.history}}
+      {{#if url}}
+      <h4><strong>{{position}}</strong>, <a href="{{{url}}}">{{organization}}</a></h4>
+      {{else}}
+      <h4><strong>{{position}}</strong>, {{organization}}</h4>
+      {{/if}}
+      {{formatDate safe.start 'YYYY-MM'}}&mdash;{{formatDate safe.end 'YYYY-MM'}}
+      {{{summary}}}
+      {{#if highlights}}
+        <ul>
+        {{#each highlights}}
+          <li>{{{this}}}</li>
+        {{/each}}
+        </ul>
+      {{/if}}
+      {{#unless @last}}<div>&nbsp;</div>{{/unless}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}

@@ -1,0 +1,14 @@
+{{#section 'recognition'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-trophy"></span>&nbsp;{{{sectionTitle "recognition" "Awards"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.recognition}}
+      <h4><strong>{{title}}</strong>, {{from}}</h4>
+      {{{date}}}
+      {{{summary}}}
+      {{#unless @last}}<div>&nbsp;</div>{{/unless}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}

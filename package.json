@@ -1,0 +1,21 @@
+{
+  "name": "fresh-theme-bootstrap",
+  "version": "1.0.0",
+  "description": "Responsive resume theme using Bootstrap and Bootswatch.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aruberto/fresh-theme-bootstrap.git"
+  },
+  "keywords": [
+    "fresh-themes",
+    "hackmyresume",
+    "fresh",
+    "fresca"
+  ],
+  "author": "aruberto (https://github.com/aruberto)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aruberto/fresh-theme-bootstrap/issues"
+  },
+  "homepage": "https://github.com/aruberto/fresh-theme-bootstrap#readme"
+}

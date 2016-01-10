@@ -1,0 +1,17 @@
+{{#section 'writing'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-pencil"></span>&nbsp;{{{sectionTitle "writing" "Publications"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.writing}}
+      {{#if url}}
+      <h4><a href="{{{url}}}"><strong>{{title}}</strong></a>, {{publisher.name}}</h4>
+      {{else}}
+      <h4><strong>{{title}}</strong>, {{publisher.name}}</h4>
+      {{/if}}
+      Published on: {{formatDate safe.date 'YYYY-MM'}}
+      {{#unless @last}}<div>&nbsp;</div>{{/unless}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}
