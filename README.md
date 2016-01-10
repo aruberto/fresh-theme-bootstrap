@@ -1,5 +1,5 @@
 # fresh-theme-bootstrap
-Responsive resume theme for [HackMyResume|https://github.com/hacksalot/HackMyResume] using [Bootstrap|http://getbootstrap.com] and [Bootswatch|https://bootswatch.com].
+Responsive resume theme for [HackMyResume](https://github.com/hacksalot/HackMyResume) using [Bootstrap](http://getbootstrap.com) and [Bootswatch](https://bootswatch.com).
 
 ## Install
 
