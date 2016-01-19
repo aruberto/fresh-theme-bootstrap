@@ -1,0 +1,16 @@
+{
+  "name": "fresh-theme-bootstrap-test",
+  "version": "0.1.1",
+  "description": "fresh-theme-bootstrap-test",
+  "repository": "https://github.com/aruberto/fresh-theme-bootstrap/test",
+  "author": "aruberto (https://github.com/aruberto)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aruberto/fresh-theme-bootstrap/issues"
+  },
+  "homepage": "https://github.com/aruberto/fresh-theme-bootstrap#readme",
+  "devDependencies": {
+    "fresh-theme-bootstrap": "../",
+    "hackmyresume": "^1.5.2"
+  }
+}
