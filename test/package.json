@@ -11,6 +11,6 @@
   "homepage": "https://github.com/aruberto/fresh-theme-bootstrap#readme",
   "devDependencies": {
     "fresh-theme-bootstrap": "../",
-    "hackmyresume": "^1.5.2"
+    "hackmyresume": "^1.8.0"
   }
 }
