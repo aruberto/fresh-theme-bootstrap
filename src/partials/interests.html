@@ -1,0 +1,13 @@
+{{#section 'interests'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-heart"></span>&nbsp;{{{sectionTitle "Interests"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.interests}}
+      <h4>{{name}}</h4>
+      {{{summary}}}
+      {{#unless @last}}<div>&nbsp;</div>{{/unless}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}
