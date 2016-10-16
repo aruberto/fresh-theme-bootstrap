@@ -1,0 +1,17 @@
+{{#section 'speaking'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-comment"></span>&nbsp;{{{sectionTitle "speaking" "Speaking"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.speaking}}
+      {{#if url}}
+      <h4><a href="{{{url}}}"><strong>{{title}}</strong></a>, {{event}}</h4>
+      {{else}}
+      <h4><strong>{{title}}</strong>, {{event}}</h4>
+      {{/if}}
+      Presented on: {{formatDate safe.date 'YYYY-MM-DD'}}
+      {{#unless @last}}<div>&nbsp;</div>{{/unless}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}
