@@ -1,0 +1,17 @@
+{{#section 'affiliation'}}
+<hr>
+<section class="row">
+  <h3 class="{{headerClass}}"><span class="fa fa-fw fa-child"></span>&nbsp;{{{sectionTitle "Affiliation"}}}</h3>
+  <div class="{{contentClass}}">
+    {{#each r.affiliation.history}}
+      {{#if url}}
+      <h4><strong>{{role}}</strong>, <a href="{{{url}}}">{{organization}}</a></h4>
+      {{else}}
+      <h4><strong>{{role}}</strong>, {{organization}}</h4>
+      {{/if}}
+    {{formatDate safe.start 'YYYY-MM'}}&mdash;{{formatDate safe.end 'YYYY-MM'}}
+    {{{summary}}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}
